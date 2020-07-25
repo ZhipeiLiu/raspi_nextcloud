@@ -139,7 +139,8 @@
      - name: Download Nextcloud 17.0.1 (for Buster)
        get_url:
           #url: https://download.nextcloud.com/server/releases/latest.zip
-          url: http://download.nextcloud.com/server/releases/nextcloud-17.0.1.zip
+          #url: http://download.nextcloud.com/server/releases/nextcloud-17.0.1.zip
+          url: https://v.mattzo.com/nextcloud-19.0.1.zip
           dest: /tmp/nextcloud.zip
        when: ansible_distribution_release == 'buster'
 
